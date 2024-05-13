@@ -1,0 +1,12 @@
+.outerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    height: 400px;
+    margin: 10px;
+}
+.result{
+    text-align: right;
+}

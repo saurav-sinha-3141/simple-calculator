@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Simple Calculator</title>
-</head>
-<body>
-    <div style="margin: 10px;">
-        Enter expression to evaluate
-        <input type="text" id="input">
+  </head>
+  <body>
+    <h2 style="margin: 10px">Calculator</h2>
+    <div style="margin: 10px">
+      Enter expression to evaluate
+      <input type="text" id="input" />
     </div>
-    <button id="calculate" style="margin: 10px;">Calculate</button>
-    <button id="stopAudio" style="display: none; margin: 10px;">Stop Audio</button>
+    <button id="calculate" style="margin: 10px">Calculate</button>
+    <button id="stopAudio" style="display: none; margin: 10px">
+      Stop Audio
+    </button>
 
-    <div class="scriptControl" style="display: none;">
-    <div class="outerContainer">
-        <img src="RickRoll.jpg" alt="..." class="container">
-    </div>
+    <div class="scriptControl" style="display: none">
+      <div class="outerContainer">
+        <img src="ryan.jpg" alt="..." class="image" />
+        <div class="text-block">
+          <h4>I don't know</h4>
+        </div>
+      </div>
     </div>
 
-    <div class="result"></div>
+    <div class="result" style="font-size: 10px; text-align: right;"></div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

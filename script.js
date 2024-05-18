@@ -4,17 +4,17 @@ function evaluateExpression() {
 
     try {
         var result = eval(inputExpression);
-        resultContainer.textContent = 'Maybe ' + result;
+        resultContainer.textContent = 'Maybe ' + result + ' or something';
     } catch (error) {
         resultContainer.textContent = 'Error: ' + error.message;
     }
 }
 
-function rickRollThem() {
+function prankThem() {
   var scriptControlDiv = document.querySelector(".scriptControl");
   scriptControlDiv.style.display = "block";
 
-  var audio = new Audio("RickRollAudio.MP3");
+  var audio = new Audio("pixies.wav");
   audio.play();
 
   document.getElementById("stopAudio").style.display = "inline-block";
@@ -30,5 +30,5 @@ function rickRollThem() {
 
 document.getElementById('calculate').addEventListener('click', function() {
     evaluateExpression();
-    rickRollThem();
+    prankThem();
 });
